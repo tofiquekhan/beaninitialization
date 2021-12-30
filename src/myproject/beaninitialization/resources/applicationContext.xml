@@ -3,10 +3,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
- <bean id="helloBean" class="myproject.beaninitialization.beans.HelloBean" init-method="init" destroy-method="destroy">
+ <bean id="helloBean" class="myproject.beaninitialization.beans.HelloBean" >
  	<!-- 
  	<property name="name" value="Tofique Ahmed Khan"></property>
  	<property name="message" value="Good Morning"></property>
- 	 -->
+ 	 --> 
  </bean>
  </beans>
