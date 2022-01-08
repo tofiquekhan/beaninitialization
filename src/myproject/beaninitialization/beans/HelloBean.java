@@ -26,19 +26,19 @@ public class HelloBean {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	/*
+	
 	public void init() {
-		System.out.println("init() - Method");
+		System.out.println("init() - Method Hello Bean");
 		name = "Sami";
 		message = "Good Afternoon";
 	}
 	
-	public void destroy() {
-		System.out.println("destroy() - Method");
+	public void destory() {
+		System.out.println("destroy() - Method Hello Bean");
 		name = "";
 		message = "";
 	}
-	*/
+	
 	
 	/*
 	 * @Override public void afterPropertiesSet() throws Exception {
@@ -49,19 +49,18 @@ public class HelloBean {
 	 * System.out.println("destroy() method"); }
 	 */
 	
-	@PostConstruct
-	public void initializeBean() {
-		System.out.println("Initialization through @PostConstruct Method");
-		name = "Sameer";
-		message = "Good Night";
-				
-	}
-	
-	@PreDestroy
-	public void destroyBean() {
-		System.out.println("Bean Deinstatiation throught @PreDestory");
-		
-	}
+	/*
+	 * @PostConstruct public void initializeBean() {
+	 * System.out.println("Initialization through @PostConstruct Method"); name =
+	 * "Sameer"; message = "Good Night";
+	 * 
+	 * }
+	 * 
+	 * @PreDestroy public void destroyBean() {
+	 * System.out.println("Bean Deinstatiation throught @PreDestory");
+	 * 
+	 * }
+	 */
 	
 	public String sayHello() {
 		return "Hello "+name+", "+message+"!";

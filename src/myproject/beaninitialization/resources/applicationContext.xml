@@ -4,11 +4,23 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd
- http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-<context:annotation-config></context:annotation-config>
+ http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd" 
+ default-init-method="init" default-destroy-method="destory">
+<!-- <context:annotation-config></context:annotation-config> -->
+	<bean id="wishBean" class="myproject.beaninitialization.beans.WishBean">
+		<property name="name" value="Himanshu"></property>
+		<property name="message" value="Good Day"></property>
+	</bean>
+	
 	<bean id="helloBean"
-		class="myproject.beaninitialization.beans.HelloBean">
-		<!-- <property name="name" value="Tofique Ahmed Khan"></property> <property 
+		class="myproject.beaninitialization.beans.HelloBean" >
+		 <!-- <property name="name" value="Tofique Ahmed Khan"></property> 
+		 <property 
 			name="message" value="Good Morning"></property> -->
+	</bean>
+	
+	<bean id="heyBean" class="myproject.beaninitialization.beans.HeyBean">
+		<!-- <property name="name" value="Sami"></property>
+		<property name="message" value="How are you ?"></property> -->
 	</bean>
 </beans>
